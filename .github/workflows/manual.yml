@@ -18,6 +18,7 @@ jobs:
        CIBW_BEFORE_ALL_LINUX: "curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain stable -y && yum install -y openssl-devel perl-IPC-Cmd"
        CIBW_BEFORE_BUILD_LINUX: "pip3 install --upgrade keyrings.alt"
        CIBW_ARCHS_LINUX: "auto aarch64"
+       CIBW_ARCHS_MACOS: "x86_64 universal2 arm64"
        CIBW_ENVIRONMENT: 'PATH="$PATH:$HOME/.cargo/bin"'
        CIBW_SKIP: "cp39-* pp* *-win32 *-musllinux* *_i686"
 
