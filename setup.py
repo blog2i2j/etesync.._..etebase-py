@@ -3,7 +3,7 @@ from setuptools_rust import Binding, RustExtension
 
 setup(
     name="etebase",
-    version="0.31.8",
+    version="0.31.9",
     rust_extensions=[RustExtension("etebase.etebase_python", binding=Binding.RustCPython)],
     packages=["etebase"],
     author='Tom Hacohen',
